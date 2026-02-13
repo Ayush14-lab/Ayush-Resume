@@ -1,0 +1,10 @@
+body {
+    background-image: url(https://img.freepik.com/premium-photo/wooden-cubes-papers-pen-white-blue-background-space-text_185193-147138.jpg?semt=ais_user_personalization&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+#center {
+    text-align: center;
+    text-decoration: underline;
+}
