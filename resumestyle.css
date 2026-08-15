@@ -1,42 +1,159 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 60%;
+body {
+    font-family: Arial, sans-serif;
+    background: #e9ecef;
+    color: #222;
+    line-height: 1.6;
+}
+
+.cv {
+    width: 850px;
+    max-width: 95%;
     margin: 30px auto;
     background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px gray;
+    padding: 45px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
-.header {
+
+/* Header */
+
+header {
     text-align: center;
+    border-bottom: 2px solid #222;
+    padding-bottom: 25px;
 }
 
-.header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
 }
 
-h1 {
-    margin: 10px 0 5px;
+header p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0 15px;
 }
 
-h2 {
-    background: #333;
-    color: white;
-    padding: 5px;
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
 }
 
-.section {
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: #222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #0077b5;
+}
+
+
+/* Sections */
+
+section {
+    margin-top: 28px;
+}
+
+section h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
+section p {
+    font-size: 15px;
+}
+
+
+/* Education & Projects */
+
+.item {
+    margin-bottom: 18px;
+}
+
+.item h3 {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.item p {
+    color: #555;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #222;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+/* Lists */
+
 ul {
     padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    color: #777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .cv {
+        padding: 25px;
+        margin: 10px auto;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+
 }
